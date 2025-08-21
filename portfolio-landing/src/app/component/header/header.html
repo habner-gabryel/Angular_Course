@@ -1,0 +1,18 @@
+<header>
+  <h1>{{ titulo }}</h1>
+  <nav>
+        <ul>
+            @for(link of links; track link.nome) {
+              <li>
+                  <a [href]="link.url">{{ link.nome }}</a>
+              </li>
+            }
+        </ul>
+  </nav>
+
+  @if (valorClickImagem) {
+    <div>A imagem foi clicada, abrindo esta div.</div>
+  }
+
+  <app-card-imagem [descricaoImagem]="descricaoImagem" (imagemFoiClicada)="receiveData($event)"></app-card-imagem>
+</header>
