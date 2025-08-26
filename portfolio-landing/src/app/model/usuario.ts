@@ -1,7 +1,9 @@
 export interface Usuario {
     id: number;
     nome: string;
-    cargo: Cargo;
+    idade: number;
+    email: string;
+    cargo?: Cargo;
 }
 
 

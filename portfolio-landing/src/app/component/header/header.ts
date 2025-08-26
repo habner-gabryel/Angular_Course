@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Link } from '../../model/link';
 import { CardImagem } from "../card-imagem/card-imagem";
+import { Tarefa } from '../../model/tarefa';
 
 @Component({
   selector: 'app-header',
@@ -22,6 +23,11 @@ export class Header {
 
   descricaoImagem: string = "Imagem que deveria estar funcionando.";
 
+  tarefa: Tarefa = {
+    titulo: "Tarefa numero 1",
+    descricao: "Descrição de tarefa",
+    prioridade: 1
+  }
 
   receiveData(data: boolean) {
     this.valorClickImagem = data;
