@@ -1,0 +1,9 @@
+@if (usuarios) {
+    <ul>
+        @for (usuario of usuarios[0]; track $index) {
+            <li> Usuário de nº {{ $index + 1 }}: {{ usuario.name }}</li>
+        }
+    </ul>
+} @else {
+    <span style="color: red;"> Não foi encontrado nenhum dado!</span>
+}
