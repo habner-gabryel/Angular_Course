@@ -1,15 +1,15 @@
 <div class="form-container">
     <label for="id">ID:</label>
-    <input type="number" id="id" [(ngModel)]="id" placeholder="ID">
+    <input type="number" id="id" [(ngModel)]="id" value="{{id}}" placeholder="ID">
 
     <label for="nome">Nome:</label>
-    <input type="text" id="nome" [(ngModel)]="nome" placeholder="Nome">
+    <input type="text" id="nome" [(ngModel)]="nome" value="{{nome}}" placeholder="Nome">
 
     <label for="email">E-mail:</label>
-    <input type="text" id="email" [(ngModel)]="email" placeholder="E-mail">
+    <input type="text" id="email" [(ngModel)]="email" value="{{email}}" placeholder="E-mail">
 
     <label for="idade">Idade:</label>
-    <input type="number" id="idade" [(ngModel)]="idade" placeholder="Idade">
+    <input type="number" id="idade" [(ngModel)]="idade" value="{{idade}}" placeholder="Idade">
 
     <app-botao (cique)="enviarDados()" texto="Enviar Dados"></app-botao>
 </div>
